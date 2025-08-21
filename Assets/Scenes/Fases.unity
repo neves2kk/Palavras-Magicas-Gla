@@ -236,7 +236,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8006e5b52230051448b9cc6901173b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fase1: Fase1
 --- !u!4 &151939965
 Transform:
   m_ObjectHideFlags: 0
@@ -406,13 +405,13 @@ MonoBehaviour:
       - m_Target: {fileID: 151939964}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Fase1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &406032986
@@ -482,7 +481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8006e5b52230051448b9cc6901173b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fase1: Fase3
 --- !u!4 &561641459
 Transform:
   m_ObjectHideFlags: 0
@@ -881,13 +879,13 @@ MonoBehaviour:
       - m_Target: {fileID: 1490577805}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Tutorial
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &954460188
@@ -940,7 +938,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8006e5b52230051448b9cc6901173b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fase1: Historia
 --- !u!1 &1226245510
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,7 +967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8006e5b52230051448b9cc6901173b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fase1: Menu
 --- !u!4 &1226245512
 Transform:
   m_ObjectHideFlags: 0
@@ -1122,7 +1118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8006e5b52230051448b9cc6901173b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fase1: Historia
 --- !u!4 &1490577806
 Transform:
   m_ObjectHideFlags: 0
@@ -1167,7 +1162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8006e5b52230051448b9cc6901173b9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fase1: Fase2
 --- !u!4 &1589655314
 Transform:
   m_ObjectHideFlags: 0
@@ -1476,13 +1470,13 @@ MonoBehaviour:
       - m_Target: {fileID: 1589655313}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Fase2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1772618666
@@ -1609,13 +1603,13 @@ MonoBehaviour:
       - m_Target: {fileID: 561641458}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Fase3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1835744933

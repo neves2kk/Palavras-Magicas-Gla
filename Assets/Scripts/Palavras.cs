@@ -9,6 +9,8 @@ public class Palavras : MonoBehaviour
 
     public int Score;
 
+    public string nomeDaPalavra;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,11 @@ public class Palavras : MonoBehaviour
         {
             sr.enabled = false;
             box.enabled = false;
+
+            if (!string.IsNullOrEmpty(nomeDaPalavra))
+            {
+                GlBoardController.instance.TrackCorrectWord(nomeDaPalavra);
+            }
 
             GameController.instance.totalScore += Score;
             GameController.instance.UpdateScoreText();

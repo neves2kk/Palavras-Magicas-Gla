@@ -27,13 +27,14 @@ public class GameController : MonoBehaviour
         gLBoard.SetCustomReport("Esse jogador possui dificiculdade em soma");
         StartCoroutine(gLBoard.SEND_USER_DATA());
     }
-   
+
 
     // Start is called before the first frame update
 
     void Start()
     {
         instance = this;                    // Instancia a ClasseController
+        GlBoardController.instance.StartSection(SceneManager.GetActiveScene().name);
     }
 
     // Atualizar o placar
@@ -54,6 +55,7 @@ public class GameController : MonoBehaviour
         goal.SetActive(false);                      // Desativa o painel central do objetivo
         pause.SetActive(false);                     // Desativa o botão de pause 
         heart.SetActive(false);                     // Desativa o botão de coração
+        GlBoardController.instance.EndSection("DERROTA");
     }
 
     // Recomeça o jogo
@@ -76,6 +78,7 @@ public class GameController : MonoBehaviour
         goal.SetActive(false);                      // Desativa o painel central do objetivo
         pause.SetActive(false);                     // Desativa o botão de pause
         heart.SetActive(false);                     // Desativa o botão de coração
+        GlBoardController.instance.EndSection("VITORIA");
     }
 
     // Faz com que o personagem pare de andar enquanto o npc fala
