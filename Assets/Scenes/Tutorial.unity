@@ -6441,6 +6441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 641234364}
   - component: {fileID: 641234363}
+  - component: {fileID: 641234371}
   - component: {fileID: 641234366}
   - component: {fileID: 641234365}
   - component: {fileID: 641234367}
@@ -6599,6 +6600,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &641234371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641234362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Entendi
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!4 &688776586 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8137081198253995065, guid: 89fd0e2f29f12004f9e755c8686fba62, type: 3}
@@ -8284,7 +8301,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Cantar
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &1044548884
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23199,7 +23219,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Correr
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &1113211126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23549,7 +23572,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Ler
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &1434495989
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25138,6 +25164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1553206790}
   - component: {fileID: 1553206789}
+  - component: {fileID: 1553206794}
   - component: {fileID: 1553206792}
   - component: {fileID: 1553206791}
   - component: {fileID: 1553206793}
@@ -25274,6 +25301,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &1553206794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553206788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Joguei
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1 &1618827688
 GameObject:
   m_ObjectHideFlags: 0
@@ -25470,6 +25513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1665048182}
   - component: {fileID: 1665048181}
+  - component: {fileID: 1665048186}
   - component: {fileID: 1665048184}
   - component: {fileID: 1665048183}
   - component: {fileID: 1665048185}
@@ -25606,6 +25650,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &1665048186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665048180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Cantei
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1 &1680895540
 GameObject:
   m_ObjectHideFlags: 0

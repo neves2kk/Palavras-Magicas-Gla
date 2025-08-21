@@ -6,36 +6,73 @@ using UnityEngine.SceneManagement;
 
 public class GlBoardController : MonoBehaviour
 {
+    // SINGLETON
+    public static GlBoardController instance;
 
+    // REFERÊNCIA GLBOARD
     public GLBoard gboard;
-    public SceneChanger changeScene;
-
 
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
-        SceneManager.LoadScene("Menu");
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void Start()
+    {
+        if (SceneManager.GetActiveScene().name != "Menu")
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
 
     public void instantiateGlBoard(string userId)
     {
         gboard = new GLBoard("F6ypBJQWSCseX9hKNrNxsA", userId);
+        
+        InitializeGlaPhases();
     }
 
+    private void InitializeGlaPhases()
+    {
+        if (gboard == null) return;
+        
+        gboard.SetQuantPhaseGame(4); // TUTORIAL + 3 FASES
+
+        // NOME EXATO DE CADA FASE
+        string[] phaseNames = { "Tutorial", "Fase 1", "Fase 2", "Fase 3" };
+
+        // PERCORRENDO E REGISTRANDO AS FASES
+        foreach (var name in phaseNames)
+        {
+            gboard.AddPhaseGame(name);
+        }
+    }
+    
     public void setUserData(string name, string birthday, string gender)
     {
-        if (gender == "masculino" || gender == "Masculino")
+        GENDER g;
+        if (gender.ToLower() == "masculino")
         {
-            gboard.SetPlayerData(name, birthday, GENDER.MASCULINO);
+            g = GENDER.MASCULINO;
         }
-        else if (gender == "feminino" || gender == "Feminino")
+        else if (gender.ToLower() == "feminino")
         {
-            gboard.SetPlayerData(name, birthday, GENDER.FEMININO);
+            g = GENDER.FEMININO;
         }
         else
         {
-            gboard.SetPlayerData(name, birthday, GENDER.OUTROS);
+            g = GENDER.OUTROS;
         }
+        
+        gboard.SetPlayerData(name, birthday, g);
         StartCoroutine(gboard.SEND_USER_DATA());
     }
 
@@ -45,5 +82,4 @@ public class GlBoardController : MonoBehaviour
         gboard.SetLastLogin(DateTime.Now);
         StartCoroutine(gboard.SEND_USER_DATA());
     }
-
 }

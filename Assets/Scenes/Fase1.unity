@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 32766013}
   - component: {fileID: 32766016}
   - component: {fileID: 32766015}
+  - component: {fileID: 32766019}
   - component: {fileID: 32766017}
   - component: {fileID: 32766018}
   m_Layer: 0
@@ -274,6 +275,22 @@ MonoBehaviour:
   wordSpeed: 0.02
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &32766019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32766012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Dormia
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!4 &46551608 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 885659884892098856, guid: 915da4b0c20cc70429b50a17c017ca32, type: 3}
@@ -489,7 +506,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Durmo
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!1 &229560763
 GameObject:
   m_ObjectHideFlags: 0
@@ -15447,7 +15467,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Vivo
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &418434633
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16150,6 +16173,7 @@ GameObject:
   - component: {fileID: 638266523}
   - component: {fileID: 638266526}
   - component: {fileID: 638266525}
+  - component: {fileID: 638266528}
   - component: {fileID: 638266527}
   m_Layer: 0
   m_Name: Errada (5)
@@ -16284,6 +16308,22 @@ MonoBehaviour:
   wordSpeed: 0.02
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &638266528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638266522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Cantava
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1 &641696219
 GameObject:
   m_ObjectHideFlags: 0
@@ -16408,7 +16448,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Trabalho
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!1 &655851388
 GameObject:
   m_ObjectHideFlags: 0
@@ -16421,6 +16464,7 @@ GameObject:
   - component: {fileID: 655851389}
   - component: {fileID: 655851392}
   - component: {fileID: 655851391}
+  - component: {fileID: 655851394}
   - component: {fileID: 655851393}
   m_Layer: 0
   m_Name: Errada (4)
@@ -16556,6 +16600,22 @@ MonoBehaviour:
   wordSpeed: 0.02
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &655851394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655851388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Comia
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1 &656156478
 GameObject:
   m_ObjectHideFlags: 0
@@ -16680,7 +16740,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Recebo
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!1001 &668436284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17056,7 +17119,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Estudo
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!1001 &800123412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17291,6 +17357,7 @@ GameObject:
   - component: {fileID: 851186958}
   - component: {fileID: 851186957}
   - component: {fileID: 851186960}
+  - component: {fileID: 851186962}
   - component: {fileID: 851186959}
   - component: {fileID: 851186961}
   m_Layer: 0
@@ -17427,6 +17494,22 @@ MonoBehaviour:
   wordSpeed: 0.02
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &851186962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851186956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Fui
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1 &857859244
 GameObject:
   m_ObjectHideFlags: 0
@@ -17551,7 +17634,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Aprendo
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!1001 &859232816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17928,7 +18014,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Bebo
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!1001 &927715904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18330,7 +18419,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Escrevo
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!1001 &1067718362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18533,6 +18625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1146105010}
   - component: {fileID: 1146105009}
+  - component: {fileID: 1146105014}
   - component: {fileID: 1146105012}
   - component: {fileID: 1146105011}
   - component: {fileID: 1146105013}
@@ -18670,6 +18763,22 @@ MonoBehaviour:
   wordSpeed: 0.02
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &1146105014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146105008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Corri
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!114 &1163694560 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7167769175299631860, guid: 3d16c2e1cea947a408793d5d9815629c, type: 3}
@@ -18810,7 +18919,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Lembro
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!1 &1243500657 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6125337487224427977, guid: 594f698a09ac5e943abadbbeda9590e2, type: 3}
@@ -33281,7 +33393,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Falo
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &1486570359
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33348,7 +33463,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 49a9d46598f81464b920891aaa3747b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -33482,7 +33597,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Leio
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &1577313103
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36053,7 +36171,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Compreendo
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!1 &1768064310
 GameObject:
   m_ObjectHideFlags: 0
@@ -36278,7 +36399,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Corro
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!114 &1838961213 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6816916317519123824, guid: 714ce0e09dc82ca4980b624ad54aa211, type: 3}
@@ -36673,6 +36797,7 @@ GameObject:
   - component: {fileID: 1957709151}
   - component: {fileID: 1957709154}
   - component: {fileID: 1957709153}
+  - component: {fileID: 1957709156}
   - component: {fileID: 1957709155}
   m_Layer: 0
   m_Name: Errada (6)
@@ -36808,6 +36933,22 @@ MonoBehaviour:
   wordSpeed: 0.02
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &1957709156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957709150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Escrevia
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1 &1975772424
 GameObject:
   m_ObjectHideFlags: 0
@@ -36930,7 +37071,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Canto
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &2059465677
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -169,7 +169,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Correrei
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &15473614
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -495,7 +498,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Comerei
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &199974924
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -850,7 +856,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Dormirei
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &279293709
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -975,7 +984,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Dormiria
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &280299829
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1204,7 +1216,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Beberei
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &352678848
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1468,7 +1483,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Correria
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &414108521
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3134,6 +3152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 967143556}
   - component: {fileID: 967143557}
+  - component: {fileID: 967143561}
   - component: {fileID: 967143559}
   - component: {fileID: 967143558}
   - component: {fileID: 967143560}
@@ -3270,6 +3289,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &967143561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967143555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Corria
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1001 &980101188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3486,7 +3521,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Cantarei
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &1024209212
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57142,6 +57180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1130406593}
   - component: {fileID: 1130406594}
+  - component: {fileID: 1130406598}
   - component: {fileID: 1130406596}
   - component: {fileID: 1130406595}
   - component: {fileID: 1130406597}
@@ -57278,6 +57317,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &1130406598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130406592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: "L\xEA"
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1001 &1147934579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57419,7 +57474,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Escreverei
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &1153128809
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -58141,6 +58199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1276910265}
   - component: {fileID: 1276910266}
+  - component: {fileID: 1276910270}
   - component: {fileID: 1276910268}
   - component: {fileID: 1276910267}
   - component: {fileID: 1276910269}
@@ -58278,6 +58337,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &1276910270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276910264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Comi
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1 &1297533065 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6125337487224427977, guid: 594f698a09ac5e943abadbbeda9590e2, type: 3}
@@ -58355,7 +58430,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Leria
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &1359394432
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65322,6 +65400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1775443512}
   - component: {fileID: 1775443513}
+  - component: {fileID: 1775443517}
   - component: {fileID: 1775443515}
   - component: {fileID: 1775443514}
   - component: {fileID: 1775443516}
@@ -65458,6 +65537,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &1775443517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775443511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Canto
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1001 &1789699601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65648,7 +65743,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Escreveria
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &1867574967
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66058,7 +66156,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Comeria
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &2029537510
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66121,6 +66222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2067911087}
   - component: {fileID: 2067911088}
+  - component: {fileID: 2067911092}
   - component: {fileID: 2067911090}
   - component: {fileID: 2067911089}
   - component: {fileID: 2067911091}
@@ -66257,6 +66359,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &2067911092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067911086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Durmo
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1 &2088708954
 GameObject:
   m_ObjectHideFlags: 0
@@ -66329,7 +66447,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Cantaria
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &2088708958
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66454,7 +66575,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Escreveria
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &2103687862
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66584,7 +66708,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Lerei
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!212 &2118039116
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -66647,6 +66774,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132130564}
   - component: {fileID: 2132130565}
+  - component: {fileID: 2132130569}
   - component: {fileID: 2132130567}
   - component: {fileID: 2132130566}
   - component: {fileID: 2132130568}
@@ -66783,3 +66911,19 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &2132130569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132130563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Bebo
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
