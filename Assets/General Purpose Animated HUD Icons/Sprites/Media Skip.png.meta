@@ -1,0 +1,1036 @@
+fileFormatVersion: 2
+guid: 713bce74cf3860748a827c116542b160
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Media Skip_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3257fe53a11c3874f871c3b6f2067a69
+      internalID: -466399471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c4ae4bd2386a941a5096a8d74d6c28
+      internalID: 1296930497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_2
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1de4e69d0d34d64a9cfb800dd2aeb83
+      internalID: 703670486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_3
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365c43e5a21778e4fa25320f78cb9f0c
+      internalID: 740214057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_4
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20d11e6226b7cc42b78aead78fd9b37
+      internalID: 796421155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_5
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26177e17c81fa1a47aab527b3f74efdf
+      internalID: 477205750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_6
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f33c63c9daf0434fa1245eef0fe516a
+      internalID: 245313981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_7
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd6239ae50d3ee40b0e9f08d008ec86
+      internalID: -564289877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_8
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f8498d52021e34996b11b2b24beccf
+      internalID: 1299254183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_9
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccc575679a86c041bc482e02f39d56c
+      internalID: 916009983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0238b29018ad2624da86c8b990a116fe
+      internalID: -1379353207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_11
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04db6e6edbf64a5409317acffc6ceec8
+      internalID: 1976300922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_12
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958e8937e3a8dc347a703efaa6c4f153
+      internalID: -987898222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_13
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32013c4ee89a8d54a9f5cc6743062d4c
+      internalID: 276277719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_14
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e8b124b4d617042885089b01e39293
+      internalID: 1539660789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_15
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884fa7dcd5536ff47b4e7d222d207822
+      internalID: 652421788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_16
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98eb5ea7272a024190d0c6e6f2056a0
+      internalID: 1722185338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_17
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42690ae7e6b1c6a44ac3fd0b380d1da1
+      internalID: 1262894429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_18
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282289d4282824f469f911101fe80947
+      internalID: 740775975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_19
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6ca7ada33ef41498636fafd568f6a8
+      internalID: -1231936153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df090a1cc50f36c48a748f77d06ef56a
+      internalID: 2102832344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_21
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0219fcb92ecc98245b3752689599bbf2
+      internalID: 2021396730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_22
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5233bdcf75ebd84e95c547b8c57a26c
+      internalID: -1375422990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_23
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e2e909e884adf4494ce4e9b629938c
+      internalID: -233577268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_24
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53410c24f8bb7c4abb68a79e63aa37a
+      internalID: 1290374361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_25
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d713bc2b44a8349bf8c5edae521c30
+      internalID: -1828371535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_26
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d339fe03a563e4546b2b13474be3bd50
+      internalID: 1755914665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_27
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b18c46b4263d724199c0cb278f0d534
+      internalID: -1238161318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_28
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992fd4680f852704eb2d83891d664cd1
+      internalID: -2003760494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_29
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74387bc869b67174faeb219f9384291a
+      internalID: 1905665911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_30
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c800560f999114d975f00364a7fb1f
+      internalID: -1886840909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_31
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1e54fdc9e3af54aa06aa3906d164c7
+      internalID: -91761905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_32
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3dca61f5a944b40bead447e607c295
+      internalID: -48155860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_33
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47af5ed3eeb9fcc4bb4041b686ee194e
+      internalID: 628685581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_34
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0105d5fd717bdb643bf5f24899d12e48
+      internalID: 343534481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_35
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047b07e2138bca44a920be959c83703d
+      internalID: -2110603982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_36
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe3d60dc818b844e88a15c9d3f29ca2
+      internalID: 1781839342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_37
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe4ae1398138d845af05e07fa26bd50
+      internalID: -1717923807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_38
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3bd37f60ea452b499f451a7fbecc4b6
+      internalID: -1642075587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_39
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8873636dd3f9f8141922b177901af85e
+      internalID: -466512183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Media Skip_40
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1041
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1407fd0b541c5d418b4ce69423f7125
+      internalID: -340502821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Media Skip_0: -466399471
+      Media Skip_34: 343534481
+      Media Skip_15: 652421788
+      Media Skip_2: 703670486
+      Media Skip_23: -233577268
+      Media Skip_30: -1886840909
+      Media Skip_11: 1976300922
+      Media Skip_24: 1290374361
+      Media Skip_9: 916009983
+      Media Skip_35: -2110603982
+      Media Skip_1: 1296930497
+      Media Skip_10: -1379353207
+      Media Skip_12: -987898222
+      Media Skip_25: -1828371535
+      Media Skip_22: -1375422990
+      Media Skip_27: -1238161318
+      Media Skip_36: 1781839342
+      Media Skip_17: 1262894429
+      Media Skip_31: -91761905
+      Media Skip_38: -1642075587
+      Media Skip_29: 1905665911
+      Media Skip_28: -2003760494
+      Media Skip_7: -564289877
+      Media Skip_8: 1299254183
+      Media Skip_18: 740775975
+      Media Skip_19: -1231936153
+      Media Skip_20: 2102832344
+      Media Skip_21: 2021396730
+      Media Skip_4: 796421155
+      Media Skip_32: -48155860
+      Media Skip_40: -340502821
+      Media Skip_39: -466512183
+      Media Skip_26: 1755914665
+      Media Skip_33: 628685581
+      Media Skip_16: 1722185338
+      Media Skip_3: 740214057
+      Media Skip_13: 276277719
+      Media Skip_37: -1717923807
+      Media Skip_6: 245313981
+      Media Skip_5: 477205750
+      Media Skip_14: 1539660789
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

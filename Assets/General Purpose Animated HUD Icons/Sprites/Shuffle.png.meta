@@ -1,0 +1,1630 @@
+fileFormatVersion: 2
+guid: 51c6780bcd687634bbc85bcf7b67debf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shuffle_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9de96c4f35d6144b1c7c56d18d947e
+      internalID: -1211445314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1095756dc7d53b54c9d8d9625f9608e5
+      internalID: -1405906472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_2
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84f6f082049ae846a902d5b8caaaa66
+      internalID: 137131943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_3
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59b613c81f591343a6131300453538e
+      internalID: -900425887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_4
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd47c89c724d834d8957f0550b4c72c
+      internalID: 1775761293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_5
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee2672cf2e93fe41b4d5ffd9cef0a91
+      internalID: -1335111898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_6
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1827a57583a1e4a8cca7ded216ef7a
+      internalID: -1857069284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_7
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15b6ad25522e034b9d3659b94844b70
+      internalID: -103035915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_8
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76281fd037ff05f4bbff6d32c79ee079
+      internalID: 1549339531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_9
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 1849
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0547ab35c9eb6a47b72dab2bcc0991f
+      internalID: -1297778261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9b8a45cfdc8de40b6934832ccb7292
+      internalID: -1311327613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_11
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939018134605ae147bff538d7c00d99c
+      internalID: -609674699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_12
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8e3c8431b02374881899023c236338
+      internalID: -1166592799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_13
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768e40953d9c2b540b4b0910ba39f19a
+      internalID: 1854698547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_14
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a523b651bddf41498e3616a1247de6a
+      internalID: -347183004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_15
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce118742b879dc64a90333c3058e74e4
+      internalID: -328495347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_16
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f0b3d7c8e04f5459f72f2e1aaddbfe
+      internalID: -27084844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_17
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb891e6abd9eb447a643c15cad532f4
+      internalID: -1961297030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_18
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b591b47f36ba34bb03689ee7300ca5
+      internalID: 987016723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_19
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 1647
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deaa17990c40bae448a0a017c33afa2b
+      internalID: -1182607039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8bd2954ae7aeb4894039ecd973b8f0
+      internalID: -221567757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_21
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5ccf211be45884f8d57b886a8be7fa
+      internalID: -1419661156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_22
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3adae96c49de04e98df3d59ef5ddde
+      internalID: 1863249658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_23
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa383ff679e36e64fb990d184c6e878f
+      internalID: -31703566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_24
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2033001b32937419ced99b7405e540
+      internalID: 483471370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_25
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6045b568a93eace4696050f5eae75228
+      internalID: 1329711492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_26
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e66099ea9aa514f8a26b993e53d8d4
+      internalID: 962771126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_27
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00a44703bac48041a8bd5265352ccd6
+      internalID: -1425706244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_28
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945b129544fe34848b1c53e46f24b2dc
+      internalID: -2048421449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_29
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 1445
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46aae6fb0fcd08d4781f334316084fe4
+      internalID: 1986514966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_30
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac59fef4a75c7a04d9a38ddcfdcc8ebf
+      internalID: -654803234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_31
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29371e313aafc0448779b3c4fd4b2a9
+      internalID: -1780427922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_32
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd192488bc5a5b408c898e6e82b4853
+      internalID: 242010335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_33
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a05f053716c0a341871ce6507bea67e
+      internalID: -481501276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_34
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61123c0dad3dcae4fb9b590787439fe4
+      internalID: -768173513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_35
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff94af9be9028a4dae0bbc888d5946d
+      internalID: -447642343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_36
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91417acb69d06244999f505e72937bca
+      internalID: -2133108623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_37
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baaa9821ba1c5564fb240ce6b7d7dd33
+      internalID: -512888716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_38
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636f2e9bd42952942a4bbea5a9608a7e
+      internalID: 1420632811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_39
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 1243
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d4753f05c98fa4dbafb2c18ce00e45
+      internalID: 1316462746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_40
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1041
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a4bed2b06b63f4083cabef2b11df3d
+      internalID: -2061683683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_41
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1041
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65e8b1b608670b41a9a754a443a75f2
+      internalID: 571587360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_42
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1041
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c120f386b319f4fbac7af4cb470264
+      internalID: -1226986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_43
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1041
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7296b7408e7791449a1a55a1da8f3fce
+      internalID: -1898743445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_44
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1041
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bb29a6514e2f041b25914f73b30b20
+      internalID: -1103462224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_45
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1041
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9b3f19521efb04793c5730e74660da
+      internalID: 1813246103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_46
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1041
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fa9030a12f21644a5e96c69307bbb6
+      internalID: 1596922252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_47
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1041
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22934aa784761f54bb7d3fcddb8a9903
+      internalID: -1396973824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_48
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1041
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d3b57d69ab18a42b3978bc838e9d9c
+      internalID: -182775482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_49
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 1041
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad5aaf429ed5164995e1cc10335d4d9
+      internalID: -641322772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_50
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 839
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c89b89590ad1348bfa161442a1d535
+      internalID: -1263379249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_51
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 839
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978474800143d5246a540a0208c4d8bc
+      internalID: -1460142805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_52
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 839
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3a7b7c4e8bcdb4e87cd9011edf3121
+      internalID: -1179835143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_53
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 839
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b531b6a2b4c02a4f980ddbc4377fac4
+      internalID: -371130426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_54
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 839
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f9dfd63f2d49a45934e6d18b6154d1
+      internalID: 982934165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_55
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 839
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7abf97d20df93944f855bd51e08823ee
+      internalID: -562601298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_56
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 839
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f8d6409902a7e4eb88ea6bf81ac2be
+      internalID: 2086154920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_57
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 839
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f55089b59ae5174b828ff469080b5dd
+      internalID: -925744714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_58
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 839
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a831b4afe3b7b54281b93bea570554b
+      internalID: 244359533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_59
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 839
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed8887ed6d452f458c0fdec149eb0c7
+      internalID: -531601198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_60
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 637
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb921540797bec459312a121ea83c63
+      internalID: 1470189554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_61
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 637
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9dad55a58cb8054d8bbf98626cc2a4a
+      internalID: -471688422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_62
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 637
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd033ddde99c6b54f9198d73fd4b5b7a
+      internalID: 2112004302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_63
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 637
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5763985ee5d6c0498b29853244f09ee
+      internalID: 865736821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_64
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 637
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd36b0008207de46983cfd0c823509a
+      internalID: 897620884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_65
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 637
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83da348e98f4b0448aad168ff8544945
+      internalID: -835979074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_66
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 637
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057d6a775b41b4c40b317c671b0ec3de
+      internalID: 586882604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shuffle_67
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 637
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b62cb25ff624e45a1930b41efb7625
+      internalID: -920613098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Shuffle_57: -925744714
+      Shuffle_54: 982934165
+      Shuffle_28: -2048421449
+      Shuffle_10: -1311327613
+      Shuffle_50: -1263379249
+      Shuffle_25: 1329711492
+      Shuffle_9: -1297778261
+      Shuffle_14: -347183004
+      Shuffle_22: 1863249658
+      Shuffle_26: 962771126
+      Shuffle_42: -1226986
+      Shuffle_24: 483471370
+      Shuffle_56: 2086154920
+      Shuffle_53: -371130426
+      Shuffle_29: 1986514966
+      Shuffle_32: 242010335
+      Shuffle_8: 1549339531
+      Shuffle_20: -221567757
+      Shuffle_18: 987016723
+      Shuffle_17: -1961297030
+      Shuffle_46: 1596922252
+      Shuffle_34: -768173513
+      Shuffle_27: -1425706244
+      Shuffle_13: 1854698547
+      Shuffle_21: -1419661156
+      Shuffle_11: -609674699
+      Shuffle_37: -512888716
+      Shuffle_38: 1420632811
+      Shuffle_0: -1211445314
+      Shuffle_62: 2112004302
+      Shuffle_47: -1396973824
+      Shuffle_1: -1405906472
+      Shuffle_41: 571587360
+      Shuffle_59: -531601198
+      Shuffle_7: -103035915
+      Shuffle_52: -1179835143
+      Shuffle_60: 1470189554
+      Shuffle_5: -1335111898
+      Shuffle_16: -27084844
+      Shuffle_64: 897620884
+      Shuffle_15: -328495347
+      Shuffle_19: -1182607039
+      Shuffle_4: 1775761293
+      Shuffle_44: -1103462224
+      Shuffle_67: -920613098
+      Shuffle_6: -1857069284
+      Shuffle_65: -835979074
+      Shuffle_33: -481501276
+      Shuffle_39: 1316462746
+      Shuffle_3: -900425887
+      Shuffle_2: 137131943
+      Shuffle_55: -562601298
+      Shuffle_40: -2061683683
+      Shuffle_48: -182775482
+      Shuffle_66: 586882604
+      Shuffle_12: -1166592799
+      Shuffle_23: -31703566
+      Shuffle_61: -471688422
+      Shuffle_43: -1898743445
+      Shuffle_49: -641322772
+      Shuffle_51: -1460142805
+      Shuffle_58: 244359533
+      Shuffle_36: -2133108623
+      Shuffle_45: 1813246103
+      Shuffle_63: 865736821
+      Shuffle_35: -447642343
+      Shuffle_30: -654803234
+      Shuffle_31: -1780427922
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a9369bc6fecabcf48a8eefd1d2b79756
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Black Rose
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9c6d82dfc8f590d42bca64f06a274a70, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

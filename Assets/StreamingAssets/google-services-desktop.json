@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1062437135353",
+    "project_id": "palavrasmagicasv2",
+    "storage_bucket": "palavrasmagicasv2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062437135353:android:c746fc733716db2baa9328",
+        "android_client_info": {
+          "package_name": "com.AlessandraGames.com.unity.template.mobile2D"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062437135353-rb8ru7am9bg3rifqafl7iisl2e4q6m8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPH3YvXz3VPaJAq83zFle4_m1aXe1I8xE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062437135353-rb8ru7am9bg3rifqafl7iisl2e4q6m8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
