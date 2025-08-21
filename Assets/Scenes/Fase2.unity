@@ -202,7 +202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Comia
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &58932014
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -291,6 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 75800613}
   - component: {fileID: 75800614}
+  - component: {fileID: 75800618}
   - component: {fileID: 75800616}
   - component: {fileID: 75800615}
   - component: {fileID: 75800617}
@@ -427,6 +431,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &75800618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75800612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Beberei
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1 &79939059
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,7 +493,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Escrevia
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &79939062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -598,7 +621,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Falei
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &161708594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -723,7 +749,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Bebia
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &166426882
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1000,7 +1029,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Lia
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &289747640
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1125,7 +1157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Dormia
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &320719669
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1491,7 +1526,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Escrevi
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &336477132
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1839,6 +1877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 426510964}
   - component: {fileID: 426510965}
+  - component: {fileID: 426510969}
   - component: {fileID: 426510967}
   - component: {fileID: 426510966}
   - component: {fileID: 426510968}
@@ -1975,6 +2014,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &426510969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426510963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Cantarei
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1 &522477861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,6 +2040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 522477862}
   - component: {fileID: 522477863}
+  - component: {fileID: 522477867}
   - component: {fileID: 522477865}
   - component: {fileID: 522477864}
   - component: {fileID: 522477866}
@@ -2121,6 +2177,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &522477867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522477861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Correrei
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1001 &528247704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2378,7 +2450,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Corrido
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &540456125
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2915,6 +2990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 725814406}
   - component: {fileID: 725814407}
+  - component: {fileID: 725814411}
   - component: {fileID: 725814409}
   - component: {fileID: 725814408}
   - component: {fileID: 725814410}
@@ -3051,6 +3127,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &725814411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725814405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Lerei
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1 &736726309 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4317543229576201359, guid: c856c70d0ff86c74487ea2aff55ecf7d, type: 3}
@@ -3066,6 +3158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 741373699}
   - component: {fileID: 741373700}
+  - component: {fileID: 741373704}
   - component: {fileID: 741373702}
   - component: {fileID: 741373701}
   - component: {fileID: 741373703}
@@ -3202,6 +3295,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &741373704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741373698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Comerei
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1 &771012022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3248,7 +3357,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Bebido
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &771012025
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3373,7 +3485,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Corri
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &796754893
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3552,7 +3667,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Comido
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &844765366
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3964,7 +4082,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Corria
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &1197941050
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4158,7 +4279,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Comi
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &1246243132
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4684,7 +4808,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Cantado
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &1403845477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4960,7 +5087,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Cantei
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &1439475301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5115,6 +5245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1459230341}
   - component: {fileID: 1459230342}
+  - component: {fileID: 1459230346}
   - component: {fileID: 1459230344}
   - component: {fileID: 1459230343}
   - component: {fileID: 1459230345}
@@ -5251,6 +5382,22 @@ MonoBehaviour:
   wordSpeed: 0.01
   flagFrase: 0
   box: {fileID: 0}
+--- !u!114 &1459230346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459230340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomeDaPalavra: Dormirei
+  tipo: 1
+  scoreCorreto: 1
+  danoIncorreto: 0
 --- !u!1001 &1472774283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5458,7 +5605,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Dormi
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &1487421956
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10886,7 +11036,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Escrito
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &1709106201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11011,7 +11164,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Bebi
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &1714047554
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11136,7 +11292,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Falava
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &1723778586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11330,7 +11489,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Li
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &1759971020
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74766,7 +74928,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Cantava
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &1852807020
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74891,7 +75056,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Dormido
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &1859389560
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -77307,7 +77475,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743cf2091931d554c9cd86f3d7817f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 1
+  nomeDaPalavra: Falado
+  tipo: 0
+  scoreCorreto: 1
+  danoIncorreto: 1
 --- !u!61 &2147223973
 BoxCollider2D:
   m_ObjectHideFlags: 0

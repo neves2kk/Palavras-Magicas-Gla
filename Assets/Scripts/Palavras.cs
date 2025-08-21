@@ -2,15 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// DEFININDO OS TIPOS DE PALAVRA
+public enum TipoPalavra
+{
+    Correta,
+    Incorreta
+}
+
 public class Palavras : MonoBehaviour
 {
     private SpriteRenderer sr;
     private BoxCollider2D box;
 
-    public int Score;
-    
-    // Campo para você definir o nome da palavra no Inspector da Unity
+    [Header("Configuração da Palavra")]
     public string nomeDaPalavra;
+    public TipoPalavra tipo; // ADICIONANDO TIPO CORRETO OU INCORRETO
+    public int scoreCorreto = 1; 
+    public int danoIncorreto = 1;
 
     void Start()
     {
@@ -25,15 +33,23 @@ public class Palavras : MonoBehaviour
             sr.enabled = false;
             box.enabled = false;
 
-            // Notifica o GameController sobre a palavra correta que foi coletada
-            if (!string.IsNullOrEmpty(nomeDaPalavra))
+            if (tipo == TipoPalavra.Correta)
             {
                 GameController.instance.RegistrarPalavraCorreta(nomeDaPalavra);
+                
+                GameController.instance.totalScore += scoreCorreto;
+                GameController.instance.UpdateScoreText();
             }
-
-            // Atualiza a pontuação e o texto na tela
-            GameController.instance.totalScore += Score;
-            GameController.instance.UpdateScoreText();
+            else if (tipo == TipoPalavra.Incorreta)
+            {
+                GameController.instance.RegistrarPalavraIncorreta(nomeDaPalavra);
+                
+                HeartSystem vidaDoJogador = collider.GetComponent<HeartSystem>();
+                if (vidaDoJogador != null)
+                {
+                    vidaDoJogador.life -= danoIncorreto;
+                }
+            }
            
             Destroy(gameObject, 0.25f);
         }
