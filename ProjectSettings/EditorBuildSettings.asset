@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase3.unity
     guid: 41df9ae22218d13478e20464205f42bc
+  - enabled: 1
+    path: Assets/Scenes/Glboard.unity
+    guid: 3877ee905b3ce38479a406b5d141da90
+  - enabled: 0
+    path: Assets/Scenes/Auth.unity
+    guid: cffc097834ac60241b6c000559264356
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 1ae8df0455e569245b9f20aa1dbb8d91, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: a3464d95d7b2f254f8db793ccf11f7c1, type: 2}

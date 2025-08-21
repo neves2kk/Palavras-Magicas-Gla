@@ -5,10 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    public string Fase1; // Nome da cena para a qual você deseja mudar
 
-    public void ChangeScene()
+    public void ChangeScene(string sceneName)
     {
-        SceneManager.LoadScene(Fase1); // Carrega a cena com o nome especificado
+        SceneManager.LoadScene(sceneName); 
     }
 }
