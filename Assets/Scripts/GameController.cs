@@ -19,19 +19,25 @@ public class GameController : MonoBehaviour
     public GameObject pause;
     public GameObject heart;
 
-    // CAPTURANDO OS DADOS DAS SESSÕES
+    // CAPTURANDO DADOS ATUAIS
     private DateTime startTime;
     private List<string> palavrasCorretasDaSessao;
     private List<string> palavrasIncorretasDaSessao;
+    
+    // TRAVA QUE IMPEDE REENVIO DOS DADOS
+    private bool hasSessionEnded = false;
    
     void Start()
     {
         instance = this;
 
-        // DADOS DA NOVA TENTATIVA
+        // NOVA TENTATIVA
         startTime = DateTime.Now;
         palavrasCorretasDaSessao = new List<string>();
         palavrasIncorretasDaSessao = new List<string>();
+        
+        // RESETANDO TRAVA
+        hasSessionEnded = false;
     }
 
     public void RegistrarPalavraCorreta(string palavra)
@@ -88,13 +94,18 @@ public class GameController : MonoBehaviour
 
     private void EnviarDadosDaSessao(string conclusao)
     {
+        // --- NOVA LÓGICA DE TRAVA ---
+        // SE A SESSÃO TERMINOU E OS DADOS FORAM ENVIADOS, ENTÃO PARA POR AQUI
+        if (hasSessionEnded) return;
+        // ATIVANDO A TRAVA PRA GARANTIR QUE RODE SÓ UMA VEZ
+        hasSessionEnded = true;
+
         if (GlBoardController.instance == null || GlBoardController.instance.gboard == null)
         {
             Debug.LogWarning("GlBoardController não encontrado. Dados da sessão não foram salvos.");
             return;
         }
 
-        // PATH_PLAYER
         List<string> pathPlayerFinal = new List<string>();
         foreach(string palavra in palavrasCorretasDaSessao)
         {
@@ -108,7 +119,6 @@ public class GameController : MonoBehaviour
         string currentSceneName = SceneManager.GetActiveScene().name;
         STATUS_SECTION status = (conclusao == "VITORIA") ? STATUS_SECTION.VITORIA : STATUS_SECTION.DERROTA;
 
-        // ENVIO DOS DADOS
         GlBoardController.instance.gboard.AddSectionInPhase(
             phase_id: currentSceneName,
             conclusion: status,
@@ -120,7 +130,6 @@ public class GameController : MonoBehaviour
             route_image_b64: null
         );
         
-        // SALVANDO OS DADOS
         StartCoroutine(GlBoardController.instance.gboard.SEND_USER_DATA());
     }
 
