@@ -6,147 +6,91 @@ using UnityEngine.SceneManagement;
 
 public class GlBoardController : MonoBehaviour
 {
-    // --- NOVO: Singleton Instance ---
+    // Variável estática para criar o padrão Singleton
     public static GlBoardController instance;
 
+    // Referência pública para o objeto da biblioteca GLA
     public GLBoard gboard;
-    public SceneChanger changeScene;
 
-    // --- NOVO: Variáveis de Captura de Dados ---
-    private GlaGameData gameData;
-    private GlaSection currentSection;
-    private GlaPhase currentPhase;
-    private float sessionStartTime;
-
-
+    // Awake é chamado quando a instância do script é carregada
     void Awake()
     {
-        // --- NOVO: Lógica de Singleton ---
+        // Lógica para garantir que exista apenas uma instância deste objeto no jogo
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
-            // SceneManager.LoadScene("Menu"); // Movido para o Start para evitar carregamento duplo
+            DontDestroyOnLoad(gameObject); // Impede que o objeto seja destruído ao carregar novas cenas
         }
         else
         {
+            // Se uma instância já existe, destrói esta para evitar duplicatas
             Destroy(gameObject);
         }
     }
 
-    // --- NOVO: Start é mais seguro para carregar a cena inicial ---
+    // --- NOVO: Start é chamado uma vez, após o Awake ---
     void Start()
     {
-        // Garante que o menu só seja carregado uma vez, no início do jogo.
-        if (SceneManager.GetActiveScene().name == "InitialLoadingScene") // Supondo que você tenha uma cena de carregamento inicial
+        // Verifica se a cena atual NÃO é o Menu, para evitar recarregar a cena em loop.
+        if (SceneManager.GetActiveScene().name != "Menu")
         {
-             SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("Menu");
         }
     }
 
+    // Função pública para ser chamada pelo AuthManager após o login/registro
     public void instantiateGlBoard(string userId)
     {
+        // Cria uma nova instância da biblioteca GLBoard, associada ao ID do jogo e ao ID do usuário
         gboard = new GLBoard("F6ypBJQWSCseX9hKNrNxsA", userId);
         
-        // --- NOVO: Inicializa a estrutura de dados GLA ---
-        InitializeGlaData();
+        // Chama a função para configurar a estrutura das fases do jogo
+        InitializeGlaPhases();
     }
 
-    // --- NOVO: Métodos de Captura de Dados ---
-
-    private void InitializeGlaData()
+    // Prepara a estrutura de dados do GLA com as informações das fases
+    private void InitializeGlaPhases()
     {
-        gameData = new GlaGameData();
+        if (gboard == null) return;
         
-        // Pre-popula a estrutura de fases
-        string[] phaseNames = { "Tutorial", "Fase 1", "Fase 2", "Fase 3" }; // Adapte se os nomes das suas cenas forem diferentes
+        // Define o número total de fases que o jogo possui
+        gboard.SetQuantPhaseGame(4); // 4 = Tutorial + 3 Fases
+
+        // Cria um array com os nomes exatos das cenas de cada fase
+        string[] phaseNames = { "Tutorial", "Fase 1", "Fase 2", "Fase 3" }; // Importante: estes nomes devem ser idênticos aos nomes das suas cenas na Unity
+
+        // Percorre a lista de nomes e registra cada fase no sistema GLA
         foreach (var name in phaseNames)
         {
-            gameData.phases.Add(new GlaPhase { phase_id = name });
-            gameData.tentativas_por_fase[name] = 0;
-        }
-    }
-
-    public void StartSection(string phaseId)
-    {
-        if (gboard == null) return; 
-
-        currentPhase = gameData.phases.Find(p => p.phase_id == phaseId);
-        if (currentPhase == null)
-        {
-            Debug.LogError("GLA: Fase '" + phaseId + "' não encontrada. Verifique se o nome da cena corresponde aos nomes em InitializeGlaData.");
-            return;
+            gboard.AddPhaseGame(name); // Versão corrigida, com apenas um argumento
         }
         
-        gameData.nivel_jogo_iniciado = phaseId;
-        gameData.tentativas_por_fase[phaseId]++;
-        
-        currentSection = new GlaSection();
-        currentSection.dateTimeStart = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-        currentSection.status = "INCOMPLETO";
-
-        sessionStartTime = Time.time;
-    }
-
-    public void TrackCorrectWord(string word)
-    {
-        if (currentSection != null)
-        {
-            currentSection.path_player.palavras_formadas_corretas.Add(word);
-        }
-    }
-
-    public void TrackIncorrectWord(string word)
-    {
-        if (currentSection != null)
-        {
-            currentSection.path_player.palavras_formadas_incorretas.Add(word);
-        }
-    }
-
-    public void EndSection(string conclusion)
-    {
-        if (gboard == null || currentSection == null) return;
-
-        currentSection.conclusion = conclusion;
-        currentSection.dateTimeFinish = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-        currentSection.status = "COMPLETO";
-        
-        if(conclusion == "VITORIA")
-        {
-            gameData.nivel_jogo_concluido = currentPhase.phase_id;
-        }
-
-        currentPhase.sections.Add(currentSection);
-
-        float sessionDurationMinutes = (Time.time - sessionStartTime) / 60.0f;
-        gameData.player_minutes_in_game += sessionDurationMinutes;
-
-        currentSection = null;
-        
-        SendData();
-    }
-
-    private void SendData()
-    {
-        string gameDataJson = JsonUtility.ToJson(gameData, true); // O 'true' formata o JSON para ser mais legível
-        gboard.SetCustomReport(gameDataJson);
+        // Envia os dados da estrutura inicial do jogo para o servidor
         StartCoroutine(gboard.SEND_USER_DATA());
-        Debug.Log("GLA: Dados enviados.\n" + gameDataJson);
     }
     
-    // --- SEUS MÉTODOS ORIGINAIS (sem alterações) ---
+    // Função para definir os dados demográficos do jogador
     public void setUserData(string name, string birthday, string gender)
     {
         GENDER g;
-        if (gender.ToLower() == "masculino") g = GENDER.MASCULINO;
-        else if (gender.ToLower() == "feminino") g = GENDER.FEMININO;
-        else g = GENDER.OUTROS;
+        if (gender.ToLower() == "masculino")
+        {
+            g = GENDER.MASCULINO;
+        }
+        else if (gender.ToLower() == "feminino")
+        {
+            g = GENDER.FEMININO;
+        }
+        else
+        {
+            g = GENDER.OUTROS;
+        }
         
         gboard.SetPlayerData(name, birthday, g);
         StartCoroutine(gboard.SEND_USER_DATA());
     }
 
+    // Função para carregar os dados do usuário e registrar a data do último login
     public async void setLastLogin()
     {
         await gboard.LOAD_USER_DATA();

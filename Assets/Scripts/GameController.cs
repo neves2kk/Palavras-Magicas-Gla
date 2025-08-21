@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System; // Adicionado para poder usar a classe DateTime
 
 public class GameController : MonoBehaviour
 {
     public static GameController instance;
-    GLBoard gLBoard;
     public int totalScore;                          // Pontuação do jogador
     public Text scoreText;                          // Texto do placar
     
@@ -19,106 +19,152 @@ public class GameController : MonoBehaviour
     public GameObject pause;                        // Botão pause
     public GameObject heart;                        // Ícone de conração
 
-
-    async void Awake()
-    {
-        gLBoard = new GLBoard("F6ypBJQWSCseX9hKNrNxsA", SystemInfo.deviceUniqueIdentifier);
-        await gLBoard.LOAD_USER_DATA();
-        gLBoard.SetCustomReport("Esse jogador possui dificiculdade em soma");
-        StartCoroutine(gLBoard.SEND_USER_DATA());
-    }
-
-
-    // Start is called before the first frame update
-
+    // --- VARIÁVEIS PARA CAPTURAR A SESSÃO ATUAL ---
+    private DateTime startTime;
+    private List<string> palavrasCorretasDaSessao;
+    private List<string> palavrasIncorretasDaSessao;
+   
     void Start()
     {
-        instance = this;                    // Instancia a ClasseController
-        GlBoardController.instance.StartSection(SceneManager.GetActiveScene().name);
+        instance = this;
+
+        // --- PREPARA A CAPTURA PARA A NOVA TENTATIVA ---
+        startTime = DateTime.Now;
+        palavrasCorretasDaSessao = new List<string>();
+        palavrasIncorretasDaSessao = new List<string>();
+        
+        // A linha "gboard.SetStartPhase" foi removida daqui, pois a função não existe.
     }
 
-    // Atualizar o placar
+    // --- MÉTODOS PARA REGISTRAR PALAVRAS ---
+    public void RegistrarPalavraCorreta(string palavra)
+    {
+        if (palavrasCorretasDaSessao != null)
+        {
+            palavrasCorretasDaSessao.Add(palavra);
+        }
+    }
+
+    public void RegistrarPalavraIncorreta(string palavra)
+    {
+        if (palavrasIncorretasDaSessao != null)
+        {
+            palavrasIncorretasDaSessao.Add(palavra);
+        }
+    }
+    
     public void UpdateScoreText()
     {
-        scoreText.text = totalScore.ToString();     // Atualiza o placar do jogo convertendo um número inteiro em uma string
+        scoreText.text = totalScore.ToString();
     }
 
-    // Reiniciar o jogo
     public void ShowGameOver()
     {
-        Personagem.Instance.StopMove = true;        // Desabilita a movimentação do personagem
-        Personagem.Instance.Speed = 0f;             // Zera a velocidade do personagem
-        Personagem.Instance.JumpForce = 0f;         // Zera a força de pulo do personagem
-        gameOver.SetActive(true);                   // Ativa a tela de derrota
-        control.SetActive(false);                   // Desativa o controle do jogador
-        dialogue.SetActive(false);                  // Desativa o diálogo
-        goal.SetActive(false);                      // Desativa o painel central do objetivo
-        pause.SetActive(false);                     // Desativa o botão de pause 
-        heart.SetActive(false);                     // Desativa o botão de coração
-        GlBoardController.instance.EndSection("DERROTA");
+        EnviarDadosDaSessao("DERROTA");
+
+        Personagem.Instance.StopMove = true;
+        Personagem.Instance.Speed = 0f;
+        Personagem.Instance.JumpForce = 0f;
+        gameOver.SetActive(true);
+        control.SetActive(false);
+        dialogue.SetActive(false);
+        goal.SetActive(false);
+        pause.SetActive(false);
+        heart.SetActive(false);
     }
 
-    // Recomeça o jogo
     public void RestartGame(string lvlname)
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(lvlname);            // Carrega mesma cena do jogo do jogo 
+        SceneManager.LoadScene(lvlname);
     }
 
-    // Avançar o jogo
     public void WinGame()
     {
+        EnviarDadosDaSessao("VITORIA");
+
         Time.timeScale = 1;
-        Personagem.Instance.StopMove = true;        // Desabilita a movimentação do personagem
-        Personagem.Instance.Speed = 0f;             // Zera a velocidade do personagem
-        Personagem.Instance.JumpForce = 0f;         // Zera a força de pulo do personagem
-        gameWin.SetActive(true);                    // Ativa a tela de vitória 
-        control.SetActive(false);                   // Desabilita o controle do jogador
-        dialogue.SetActive(false);                  // Desabilita o diálogo
-        goal.SetActive(false);                      // Desativa o painel central do objetivo
-        pause.SetActive(false);                     // Desativa o botão de pause
-        heart.SetActive(false);                     // Desativa o botão de coração
-        GlBoardController.instance.EndSection("VITORIA");
+        Personagem.Instance.StopMove = true;
+        Personagem.Instance.Speed = 0f;
+        Personagem.Instance.JumpForce = 0f;
+        gameWin.SetActive(true);
+        control.SetActive(false);
+        dialogue.SetActive(false);
+        goal.SetActive(false);
+        pause.SetActive(false);
+        heart.SetActive(false);
     }
 
-    // Faz com que o personagem pare de andar enquanto o npc fala
+    private void EnviarDadosDaSessao(string conclusao)
+    {
+        if (GlBoardController.instance == null || GlBoardController.instance.gboard == null)
+        {
+            Debug.LogWarning("GlBoardController não encontrado. Não foi possível salvar os dados da sessão.");
+            return;
+        }
+
+        List<string> pathPlayerFinal = new List<string>();
+        foreach(string palavra in palavrasCorretasDaSessao)
+        {
+            pathPlayerFinal.Add("CORRETA: " + palavra);
+        }
+        foreach(string palavra in palavrasIncorretasDaSessao)
+        {
+            pathPlayerFinal.Add("INCORRETA: " + palavra);
+        }
+
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        
+        STATUS_SECTION status = (conclusao == "VITORIA") ? STATUS_SECTION.VITORIA : STATUS_SECTION.DERROTA;
+
+        GlBoardController.instance.gboard.AddSectionInPhase(
+            phase_id: currentSceneName,
+            conclusion: status,
+            perfomance: 0,
+            dateTimeStartSection: startTime,
+            dateTimeFinishSection: DateTime.Now,
+            finalized_challenges: null,
+            path_player: pathPlayerFinal,
+            route_image_b64: null
+        );
+        
+        StartCoroutine(GlBoardController.instance.gboard.SEND_USER_DATA());
+    }
+
     public void Talking()
     {
-        Dialogue1.instance.wordSpeed = 0.1f;        // Defini a velocidade de fala para 0.1
-        Personagem.Instance.StopMove = true;        // Desabilita a movimentação do personagem
-        Personagem.Instance.Speed = 0.1f ;          // Zera a velocidade do personagem
-        Personagem.Instance.JumpForce *= 0f;        // Zera a força de pulo do personagem
-        control.SetActive(false);                   // Desabilita o controle do jogador
-        goal.SetActive(false);                      // Desativa o painel central do objetivo
-        pause.SetActive(false);                     // Desativa o botão de pause
+        Dialogue1.instance.wordSpeed = 0.1f;
+        Personagem.Instance.StopMove = true;
+        Personagem.Instance.Speed = 0.1f ;
+        Personagem.Instance.JumpForce *= 0f;
+        control.SetActive(false);
+        goal.SetActive(false);
+        pause.SetActive(false);
     }
     
-    // Retorna o movimento do personagem
     public void StopTalk()
     {
-        Personagem.Instance.StopMove = false;      // Habilita a movimentação do personagem
-        Personagem.Instance.Speed = 5f ;           // Altera a velocidade do personagem
-        Personagem.Instance.JumpForce = 10f;       // Altera a força de pulo do personagem
-        control.SetActive(true);                   // Ativa o controle do jogador
-        goal.SetActive(true);                      // Ativa o painel central do objetivo    
-        pause.SetActive(true);                     // Ativa o botão de pause
-
+        Personagem.Instance.StopMove = false;
+        Personagem.Instance.Speed = 5f ;
+        Personagem.Instance.JumpForce = 10f;
+        control.SetActive(true);
+        goal.SetActive(true);
+        pause.SetActive(true);
     }
-
 
     public void PassLevel(string lvlname)
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(lvlname);            // Avança para a próxima fase do jogo 
+        SceneManager.LoadScene(lvlname);
     }
 
-     public void PauseGame()
+    public void PauseGame()
     {
-        Time.timeScale = 0;                         // pausado
+        Time.timeScale = 0;
     }
 
     public void ContinueGame()
     {
-        Time.timeScale = 1;                         // sai do pause
+        Time.timeScale = 1;
     }
 }

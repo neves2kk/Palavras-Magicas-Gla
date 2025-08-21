@@ -8,10 +8,10 @@ public class Palavras : MonoBehaviour
     private BoxCollider2D box;
 
     public int Score;
-
+    
+    // Campo para você definir o nome da palavra no Inspector da Unity
     public string nomeDaPalavra;
 
-    // Start is called before the first frame update
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -25,11 +25,13 @@ public class Palavras : MonoBehaviour
             sr.enabled = false;
             box.enabled = false;
 
+            // Notifica o GameController sobre a palavra correta que foi coletada
             if (!string.IsNullOrEmpty(nomeDaPalavra))
             {
-                GlBoardController.instance.TrackCorrectWord(nomeDaPalavra);
+                GameController.instance.RegistrarPalavraCorreta(nomeDaPalavra);
             }
 
+            // Atualiza a pontuação e o texto na tela
             GameController.instance.totalScore += Score;
             GameController.instance.UpdateScoreText();
            
