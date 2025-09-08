@@ -19,40 +19,55 @@ public class GameController : MonoBehaviour
     public GameObject pause;
     public GameObject heart;
 
-    // CAPTURANDO DADOS ATUAIS
+    // Variáveis para capturar os dados da sessão atual
     private DateTime startTime;
     private List<string> palavrasCorretasDaSessao;
     private List<string> palavrasIncorretasDaSessao;
     
-    // TRAVA QUE IMPEDE REENVIO DOS DADOS
+    // --- NOVO ---
+    // Contador para as tentativas incorretas entre acertos.
+    private int tentativasIncorretasDesdeUltimoAcerto = 0;
+    
     private bool hasSessionEnded = false;
    
     void Start()
     {
         instance = this;
 
-        // NOVA TENTATIVA
+        // Prepara as variáveis para a nova tentativa
         startTime = DateTime.Now;
         palavrasCorretasDaSessao = new List<string>();
         palavrasIncorretasDaSessao = new List<string>();
         
-        // RESETANDO TRAVA
+        // --- NOVO ---
+        // Reseta os contadores no início de cada fase.
+        tentativasIncorretasDesdeUltimoAcerto = 0;
         hasSessionEnded = false;
     }
 
+    // --- MODIFICADO ---
     public void RegistrarPalavraCorreta(string palavra)
     {
         if (palavrasCorretasDaSessao != null)
         {
-            palavrasCorretasDaSessao.Add(palavra);
+            string registro = $"CORRETA: {palavra} (tentativas_ate_acerto: {tentativasIncorretasDesdeUltimoAcerto})";
+            palavrasCorretasDaSessao.Add(registro);
+
+            // Zera o contador, pois o jogador acertou
+            tentativasIncorretasDesdeUltimoAcerto = 0;
         }
     }
 
+    // --- MODIFICADO ---
     public void RegistrarPalavraIncorreta(string palavra)
     {
         if (palavrasIncorretasDaSessao != null)
         {
-            palavrasIncorretasDaSessao.Add(palavra);
+            // Adiciona a palavra incorreta à sua lista
+            palavrasIncorretasDaSessao.Add("INCORRETA: " + palavra);
+            
+            // Incrementa o contador de tentativas
+            tentativasIncorretasDesdeUltimoAcerto++;
         }
     }
     
@@ -94,10 +109,7 @@ public class GameController : MonoBehaviour
 
     private void EnviarDadosDaSessao(string conclusao)
     {
-        // --- NOVA LÓGICA DE TRAVA ---
-        // SE A SESSÃO TERMINOU E OS DADOS FORAM ENVIADOS, ENTÃO PARA POR AQUI
         if (hasSessionEnded) return;
-        // ATIVANDO A TRAVA PRA GARANTIR QUE RODE SÓ UMA VEZ
         hasSessionEnded = true;
 
         if (GlBoardController.instance == null || GlBoardController.instance.gboard == null)
@@ -107,14 +119,8 @@ public class GameController : MonoBehaviour
         }
 
         List<string> pathPlayerFinal = new List<string>();
-        foreach(string palavra in palavrasCorretasDaSessao)
-        {
-            pathPlayerFinal.Add("CORRETA: " + palavra);
-        }
-        foreach(string palavra in palavrasIncorretasDaSessao)
-        {
-            pathPlayerFinal.Add("INCORRETA: " + palavra);
-        }
+        pathPlayerFinal.AddRange(palavrasCorretasDaSessao);
+        pathPlayerFinal.AddRange(palavrasIncorretasDaSessao);
 
         string currentSceneName = SceneManager.GetActiveScene().name;
         STATUS_SECTION status = (conclusao == "VITORIA") ? STATUS_SECTION.VITORIA : STATUS_SECTION.DERROTA;
