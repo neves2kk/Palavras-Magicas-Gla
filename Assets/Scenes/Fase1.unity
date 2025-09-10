@@ -16053,7 +16053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4749098536074217441, guid: 88d6206b5d89a22418cb8a3290913ac0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Menu
+      value: Tutorial
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88d6206b5d89a22418cb8a3290913ac0, type: 3}
@@ -33786,6 +33786,7 @@ MonoBehaviour:
   goal: {fileID: 28868962}
   pause: {fileID: 237171741}
   heart: {fileID: 1083348077}
+  macasColetadas: 0
 --- !u!1 &1726958795
 GameObject:
   m_ObjectHideFlags: 0
@@ -36463,6 +36464,7 @@ MonoBehaviour:
   rig: {fileID: 1860177573}
   anim: {fileID: 1860177576}
   flagIsGround: 0
+  idleThreshold: 5
 --- !u!61 &1860177572
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -6513,7 +6513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641234362}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.96, y: -5.29, z: 0}
+  m_LocalPosition: {x: -109.2, y: -5.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6647,6 +6647,7 @@ MonoBehaviour:
   rig: {fileID: 688776597}
   anim: {fileID: 688776594}
   flagIsGround: 0
+  idleThreshold: 5
 --- !u!114 &688776593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26678,6 +26679,7 @@ MonoBehaviour:
   goal: {fileID: 881870594}
   pause: {fileID: 319421962}
   heart: {fileID: 883191557}
+  macasColetadas: 0
 --- !u!4 &2075496638
 Transform:
   m_ObjectHideFlags: 0
@@ -27397,11 +27399,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6401420318485284169, guid: 38728c2be62fd72458bfa5cb449f74ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.26
+      value: -77.6
       objectReference: {fileID: 0}
     - target: {fileID: 6401420318485284169, guid: 38728c2be62fd72458bfa5cb449f74ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.11
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 6401420318485284169, guid: 38728c2be62fd72458bfa5cb449f74ca, type: 3}
       propertyPath: m_LocalPosition.z

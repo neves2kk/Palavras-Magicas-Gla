@@ -6,11 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class GlBoardController : MonoBehaviour
 {
-    // SINGLETON
     public static GlBoardController instance;
-
-    // REFERÊNCIA GLBOARD
     public GLBoard gboard;
+
+    private Dictionary<string, string> phaseNameMapping = new Dictionary<string, string>
+    {
+        { "Tutorial", "Tutorial - Infinitivo" },
+        { "Fase 1", "Fase 1 - Presente indicativo" },
+        { "Fase 2", "Fase 2 - Preterito indicativo" },
+        { "Fase 3", "Fase 3 - Futuro indicativo" }
+    };
 
     void Awake()
     {
@@ -36,7 +41,6 @@ public class GlBoardController : MonoBehaviour
     public void instantiateGlBoard(string userId)
     {
         gboard = new GLBoard("F6ypBJQWSCseX9hKNrNxsA", userId);
-        
         InitializeGlaPhases();
     }
 
@@ -44,33 +48,31 @@ public class GlBoardController : MonoBehaviour
     {
         if (gboard == null) return;
         
-        gboard.SetQuantPhaseGame(4); // TUTORIAL + 3 FASES
+        gboard.SetQuantPhaseGame(phaseNameMapping.Count);
 
-        // NOME EXATO DE CADA FASE
-        string[] phaseNames = { "Tutorial", "Fase 1", "Fase 2", "Fase 3" };
-
-        // PERCORRENDO E REGISTRANDO AS FASES
-        foreach (var name in phaseNames)
+        foreach (var analyticsName in phaseNameMapping.Values)
         {
-            gboard.AddPhaseGame(name);
+            gboard.AddPhaseGame(analyticsName);
         }
+        
+        StartCoroutine(gboard.SEND_USER_DATA());
+    }
+
+    public string GetAnalyticsPhaseName(string sceneName)
+    {
+        if (phaseNameMapping.ContainsKey(sceneName))
+        {
+            return phaseNameMapping[sceneName];
+        }
+        return sceneName;
     }
     
     public void setUserData(string name, string birthday, string gender)
     {
         GENDER g;
-        if (gender.ToLower() == "masculino")
-        {
-            g = GENDER.MASCULINO;
-        }
-        else if (gender.ToLower() == "feminino")
-        {
-            g = GENDER.FEMININO;
-        }
-        else
-        {
-            g = GENDER.OUTROS;
-        }
+        if (gender.ToLower() == "masculino") g = GENDER.MASCULINO;
+        else if (gender.ToLower() == "feminino") g = GENDER.FEMININO;
+        else g = GENDER.OUTROS;
         
         gboard.SetPlayerData(name, birthday, g);
         StartCoroutine(gboard.SEND_USER_DATA());

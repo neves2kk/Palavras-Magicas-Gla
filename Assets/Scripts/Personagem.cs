@@ -26,110 +26,59 @@ public class Personagem : MonoBehaviour
 
     public bool flagIsGround;
 
-    // Start is called before the first frame update
+    [Header("Detecção de Inatividade")]
+    public float idleThreshold = 5f;
+    private float idleTimer;
+    private bool isIdle;
+
     void Start()
     {
-        Instance = this;                        //estabelecendo uma instanciação para transformar o Personagem em um objeto
-        rig = GetComponent<Rigidbody2D>();      //receber o rididbody armazenado
-        anim = GetComponent<Animator>();        //receber o animator armazenado
+        Instance = this;
+        rig = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         flagIsGround = false;
     }
 
-
-    // Update is called once per frame
     void Update()
     {
         Move();
-        // Jump();
         Verticalmovement = joy.Vertical; 
         if(Verticalmovement > 0.2f && !isJumping)
         {
             Jump();
         }
         
-        Chest.instance.Compare();
+        if (Chest.instance != null)
+        {
+            Chest.instance.Compare();
+        }
+
+        CheckForIdle();
     }
 
-    // Desktop
-    // Função para os movimentos do personagem, direita e esquerda. 
-  
-  /**
+    void CheckForIdle()
+    {
+        if (rig.velocity.magnitude < 0.1f)
+        {
+            idleTimer += Time.deltaTime;
+
+            if (idleTimer >= idleThreshold && !isIdle)
+            {
+                isIdle = true;
+                GameController.instance.RegistrarEventoIdle(idleThreshold, transform.position);
+            }
+        }
+        else
+        {
+            idleTimer = 0;
+            isIdle = false;
+        }
+    }
+
     void Move()
     {
         if(StopMove) 
         {
-            // Desativa a movimentação
-            rig.velocity = Vector2.zero;
-            rig.angularVelocity = 0f;
-            rig.isKinematic = true;
-            anim.SetBool("run", false);
-            anim.SetBool("jump", false);
-
-            // Reativa a movimentação
-            if(Input.GetKeyDown(KeyCode.Space))
-            {
-                Dialogue1.instance.wordSpeed = 0f;
-                StopMove = false;
-                GameController.instance.StopTalk();
-            }
-        }
-        
-        if(!StopMove)
-        {
-            // Altera retorna o valor de movement, sendo x no Vector3, através de Input.GetAxis("Horizontal")
-            // Atualiza o valor do deslocamento retornando tranform.position
-            rig.isKinematic = false;
-
-
-            Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
-            transform.position += movement * Time.deltaTime * Speed;
-        
-            // Anda para direita
-            if(Input.GetAxis("Horizontal")> 0f) 
-            {
-                transform.eulerAngles = new Vector3(0f,0f,0f);
-                anim.SetBool("run", true);
-            }
-
-            // Anda para a esquerda e faz a uma mudança de animação (Inverte o eulerAngles ir para a esquerda) 
-            if(Input.GetAxis("Horizontal") < 0f) 
-            {
-                transform.eulerAngles = new Vector3(0f,180f,0f);
-                anim.SetBool("run", true);
-            }
-
-            // Verifica se o personagem está andando, para realizar a animação de idle, retornando a condição de run um valor booleano
-
-            if(Input.GetAxis("Horizontal") == 0f)
-            {
-                anim.SetBool("run", false);
-            }
-        }
-    }
-        
-     // Função para os movimentos do personagem, pulo.
-    void Jump()
-    {
-        if(Input.GetButtonDown("Jump")) // !isJump inverte o valor e verfica se é falso; pode usar também isJump == false 
-        {
-            if(!isJumping && flagIsGround)
-            {
-                rig.AddForce(new Vector2(0f, JumpForce),ForceMode2D.Impulse);
-                anim.SetBool("jump", true);
-            }   
-        }
-    }
-**/
-
-
-    // Android
-    // Função para os movimentos do personagem, direita e esquerda. 
-  
-    void Move()
-    {
-        if(StopMove) 
-        {
-            // Desativa a movimentação
             Horizontalmovement = (joy.Horizontal * -1);
             rig.velocity = Vector2.zero;
             rig.angularVelocity = 0f;
@@ -137,23 +86,17 @@ public class Personagem : MonoBehaviour
             anim.SetBool("run", false);
             anim.SetBool("jump", false);
 
-            // Reativa a movimentação
             if(Input.GetMouseButtonDown(0))
             {
-                Dialogue1.instance.wordSpeed = 0f;
+                if (Dialogue1.instance != null) Dialogue1.instance.wordSpeed = 0f;
                 StopMove = false;
                 GameController.instance.StopTalk();
             }
         }
    
-        // Altera retorna o valor de movement, sendo x no Vector3, através de Input.GetAxis("Horizontal")
-        // Atualiza o valor do deslocamento retornando tranform.position
-        // Reativa a movimentação
-
         if(!StopMove)
-            
+        {
             rig.isKinematic = false;
-
             Vector3 movement;
             Horizontalmovement = joy.Horizontal;
             movement = new Vector3(Horizontalmovement, 0f, 0f);
@@ -162,19 +105,15 @@ public class Personagem : MonoBehaviour
             if(Horizontalmovement > 0){
                 transform.eulerAngles = new Vector3(0f,0f,0f);
                 anim.SetBool("run", true);
-
-            }else if(Horizontalmovement < 0){
-
+            } else if(Horizontalmovement < 0){
                 transform.eulerAngles = new Vector3(0f,180f,0f);
                 anim.SetBool("run", true);
-
             } else {    
                 anim.SetBool("run", false);
+            }
         }
     }
 
-
-    // Função para os movimentos do personagem, pulo.
     void Jump()
     {       
         if(!isJumping && flagIsGround)
@@ -185,11 +124,9 @@ public class Personagem : MonoBehaviour
         }
     }
 
-
-    // Detectando quando o personagem encosta em alguma coisa (Utilizando layers e tags)
     void OnCollisionEnter2D(Collision2D collison)
     {  
-        if(collison.gameObject.layer == 8) // 8 por causa do layer
+        if(collison.gameObject.layer == 8)
         {
             isJumping = false;
             anim.SetBool("jump", false);
@@ -200,25 +137,22 @@ public class Personagem : MonoBehaviour
             GameController.instance.ShowGameOver();
             Destroy(gameObject);
         }
-
     }
 
-    // Detectando quando personagem deixa de encostar em alguma coisa (Utilizando layers e tags)
     void OnCollisionExit2D(Collision2D collison)
      {
-        if(collison.gameObject.layer == 8) // 8 por causa do layer
+        if(collison.gameObject.layer == 8)
         {
             isJumping = true;
         }  
      }
-
-    // Criando uma função para animar o personagem tomando dano, no Script TriggerDamage.cs   
     public void Damage()
     {
+        GameController.instance.RegistrarDanoInimigo(transform.position);
+
         anim.SetTrigger("damage");
     }
 
-    // Criando uma função para animar o personagem tomando dano, no Script HeartSystem.cs   
     public void Dead()
     {
         anim.SetBool("die", true); 

@@ -19,13 +19,13 @@ public class GameController : MonoBehaviour
     public GameObject pause;
     public GameObject heart;
 
-    // Variáveis para capturar os dados da sessão atual
     private DateTime startTime;
     private List<string> palavrasCorretasDaSessao;
     private List<string> palavrasIncorretasDaSessao;
+
+    public int macasColetadas = 0;
+    private HeartSystem vidaDoJogador;
     
-    // --- NOVO ---
-    // Contador para as tentativas incorretas entre acertos.
     private int tentativasIncorretasDesdeUltimoAcerto = 0;
     
     private bool hasSessionEnded = false;
@@ -34,39 +34,53 @@ public class GameController : MonoBehaviour
     {
         instance = this;
 
-        // Prepara as variáveis para a nova tentativa
         startTime = DateTime.Now;
         palavrasCorretasDaSessao = new List<string>();
         palavrasIncorretasDaSessao = new List<string>();
         
-        // --- NOVO ---
-        // Reseta os contadores no início de cada fase.
         tentativasIncorretasDesdeUltimoAcerto = 0;
         hasSessionEnded = false;
     }
 
-    // --- MODIFICADO ---
-    public void RegistrarPalavraCorreta(string palavra)
+    public void RegistrarPalavraCorreta(string palavra, Vector2 posicao)
     {
         if (palavrasCorretasDaSessao != null)
         {
-            string registro = $"CORRETA: {palavra} (tentativas_ate_acerto: {tentativasIncorretasDesdeUltimoAcerto})";
+            string posFormatada = $" (X: {posicao.x:F2}, Y: {posicao.y:F2})";
+            string registro = $"CORRETA: {palavra} (tentativas_ate_acerto: {tentativasIncorretasDesdeUltimoAcerto}) na posição{posFormatada}";
             palavrasCorretasDaSessao.Add(registro);
 
-            // Zera o contador, pois o jogador acertou
             tentativasIncorretasDesdeUltimoAcerto = 0;
         }
     }
 
-    // --- MODIFICADO ---
-    public void RegistrarPalavraIncorreta(string palavra)
+    public void RegistrarDanoInimigo(Vector2 posicao)
     {
         if (palavrasIncorretasDaSessao != null)
         {
-            // Adiciona a palavra incorreta à sua lista
-            palavrasIncorretasDaSessao.Add("INCORRETA: " + palavra);
+            string evento = $"EVENTO: Dano recebido na posicao (X: {posicao.x:F2}, Y: {posicao.y:F2})";
+            palavrasIncorretasDaSessao.Add(evento);
+        }
+    }
+    
+    public void RegistrarEventoIdle(float duracao, Vector2 posicao)
+    {
+        if (palavrasIncorretasDaSessao != null)
+        {
+            string posFormatada = $" (X: {posicao.x:F2}, Y: {posicao.y:F2})";
+            string evento = $"EVENTO: Jogador inativo por {duracao} segundos na posição{posFormatada}";
+            palavrasIncorretasDaSessao.Add(evento);
+        }
+    }
+
+    public void RegistrarPalavraIncorreta(string palavra, Vector2 posicao)
+    {
+        if (palavrasIncorretasDaSessao != null)
+        {
+            string posFormatada = $" (X: {posicao.x:F2}, Y: {posicao.y:F2})";
+            string registro = $"INCORRETA: {palavra} na posição{posFormatada}";
+            palavrasIncorretasDaSessao.Add(registro);
             
-            // Incrementa o contador de tentativas
             tentativasIncorretasDesdeUltimoAcerto++;
         }
     }
@@ -123,10 +137,12 @@ public class GameController : MonoBehaviour
         pathPlayerFinal.AddRange(palavrasIncorretasDaSessao);
 
         string currentSceneName = SceneManager.GetActiveScene().name;
+        string analyticsPhaseName = GlBoardController.instance.GetAnalyticsPhaseName(currentSceneName);
+        
         STATUS_SECTION status = (conclusao == "VITORIA") ? STATUS_SECTION.VITORIA : STATUS_SECTION.DERROTA;
 
         GlBoardController.instance.gboard.AddSectionInPhase(
-            phase_id: currentSceneName,
+            phase_id: analyticsPhaseName,
             conclusion: status,
             perfomance: 0,
             dateTimeStartSection: startTime,

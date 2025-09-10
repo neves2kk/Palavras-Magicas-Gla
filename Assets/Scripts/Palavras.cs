@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// DEFININDO OS TIPOS DE PALAVRA
+// Enum para definir os tipos de palavra
 public enum TipoPalavra
 {
     Correta,
@@ -16,9 +16,9 @@ public class Palavras : MonoBehaviour
 
     [Header("Configuração da Palavra")]
     public string nomeDaPalavra;
-    public TipoPalavra tipo; // ADICIONANDO TIPO CORRETO OU INCORRETO
+    public TipoPalavra tipo;
     public int scoreCorreto = 1; 
-    public int danoIncorreto = 1;
+    public int danoIncorreto = 1; 
 
     void Start()
     {
@@ -33,16 +33,18 @@ public class Palavras : MonoBehaviour
             sr.enabled = false;
             box.enabled = false;
 
+            Vector2 posicaoDaPalavra = transform.position;
+
             if (tipo == TipoPalavra.Correta)
             {
-                GameController.instance.RegistrarPalavraCorreta(nomeDaPalavra);
+                GameController.instance.RegistrarPalavraCorreta(nomeDaPalavra, posicaoDaPalavra);
                 
                 GameController.instance.totalScore += scoreCorreto;
                 GameController.instance.UpdateScoreText();
             }
             else if (tipo == TipoPalavra.Incorreta)
             {
-                GameController.instance.RegistrarPalavraIncorreta(nomeDaPalavra);
+                GameController.instance.RegistrarPalavraIncorreta(nomeDaPalavra, posicaoDaPalavra);
                 
                 HeartSystem vidaDoJogador = collider.GetComponent<HeartSystem>();
                 if (vidaDoJogador != null)
